@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Journey of Self-Discovery</title>
+    
+    <style>
+        /* General Styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f1f1; /* A very light pink/off-white background */
+            color: #4a4a4a; /* Dark gray for text */
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        /* Header */
+        header {
+            background-color: #fce4ec; /* A nice, soft pink for the header */
+            padding: 1rem 0;
+            border-bottom: 2px solid #f8bbd0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            margin: 0;
+            font-size: 1.8rem;
+            color: #d81b60; /* A darker pink for the logo */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #880e4f; /* A deep pink for links */
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #d81b60;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background-color: #f8bbd0; /* A slightly darker pink for the main banner */
+            text-align: center;
+            padding: 6rem 0;
+        }
+
+        .hero-section h2 {
+            font-size: 3rem;
+            color: #4a148c; /* A deep purple to contrast with the pink */
+            margin-bottom: 1rem;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            color: #4a4a4a;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #e91e63; /* A bright pink for the call-to-action button */
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #c2185b;
+        }
+
+        /* Blog Posts Section */
+        .blog-posts {
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 3rem;
+        }
+
+        .blog-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+
+        .icon-placeholder {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-card h4 {
+            margin: 0.5rem 0;
+            color: #d81b60;
+        }
+
+        .blog-card a {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #e91e63;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .blog-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* About Me Section */
+        .about-me {
+            padding: 4rem 0;
+            background-color: #f8eaf0; /* Another shade of pink for a different section */
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #fce4ec;
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 2px solid #f8bbd0;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">Self-Discovery Journal</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h2>Exploring My Passions, One Step at a Time.</h2>
+                <p>Welcome to my personal space dedicated to my journey of self-discovery and growth. Here, I share my passions for writing, learning, and everything in between.</p>
+                <a href="#blog" class="cta-button">Start Exploring</a>
+            </div>
+        </section>
+
+        <section id="blog" class="blog-posts">
+            <div class="container">
+                <h3>My Passions</h3>
+                <div class="grid-container">
+                    
+                    <div class="blog-card">
+                        <div class="icon-placeholder">✍️</div>
+                        <h4>Fiction</h4>
+                        <p>Dive into the worlds I've built with my imagination. A collection of short stories and novel excerpts.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="icon-placeholder">💭</div>
+                        <h4>Musings</h4>
+                        <p>My reflections and thoughts on life, philosophy, and the world around me.</p>
+                        <a href="#">Read More</a>
+                    </div>
+
+                    <div class="blog-card">
+                        <div class="icon-placeholder">📚</div>
+                        <h4>Learning</h4>
+                        <p>From new languages to industry knowledge, this is where I document my learning journey.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="icon-placeholder">💃</div>
+                        <h4>Dance</h4>
+                        <p>My passion for movement and rhythm. Insights into my dance journey and favorite choreographies.</p>
+                        <a href="#">Read More</a>
+                    </div>
+
+                    <div class="blog-card">
+                        <div class="icon-placeholder">🎶</div>
+                        <h4>Music</h4>
+                        <p>A curated list of my favorite songs, artists, and my thoughts on music creation.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="icon-placeholder">🎯</div>
+                        <h4>Growth Goals</h4>
+                        <p>Tracking my personal and professional goals. Join me on my path to becoming a better version of myself.</p>
+                        <a href="#">Read More</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-me">
+            <div class="container">
+                <h3>About Me</h3>
+                <p>Hi there! I'm a passionate learner and creator on a mission to discover and nurture my various interests. This blog is a reflection of that journey. I hope my experiences inspire you to explore your own passions!</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Self-Discovery Journal. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
